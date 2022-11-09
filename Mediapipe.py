@@ -77,7 +77,8 @@ with mp_hands.Hands(
             
             tip_pip_middle_delta_x =Middle_tip[0]-Middle_pip[0]
             tip_pip_index_delta_x = Index_tip[0]-Index_pip[0]
-
+        
+        ## change the directory according to your sdk build file
         with open('robotDog_ws/unitree_legged_sdk/build/command.txt', 'w') as f: # write command to file
             if orient_ratio <0.5:
                 print('normal')
